@@ -1,0 +1,68 @@
+/*основная часть*/
+
+main {
+    width: 90%;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    text-align: center;
+}
+
+h2,
+h4 {
+    color: #2e64bf;
+}
+
+h3 {
+    color: grey;
+}
+
+.container {
+    width: 100%;
+}
+
+.container1>div {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.container1 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 6vmin;
+    color: #00BFFF;
+}
+
+#map,
+iframe {
+    width: 100%;
+    height: 50vmin;
+    text-align: center;
+}
+
+.topbutton {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.topbutton>img {
+    width: 100%;
+    height: 100%;
+}
+
+.topbutton:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+}
+

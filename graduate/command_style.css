@@ -1,0 +1,46 @@
+/*основная часть*/
+
+main {
+    width: 93%;
+}
+
+.container1 {
+    width: 93%;
+}
+
+.container1>.command {
+    width: 93%;
+    text-align: center;
+}
+
+.command-one {
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    height: 420px;
+}
+
+.command-one>img {
+    text-align: center;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.command-one {
+    display: inline-block;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    text-align: center;
+    color: #2e64bf;
+}
+
+h5 {
+    font-weight: normal;
+    text-align: center;
+    color: grey;
+}
+

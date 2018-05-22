@@ -1,0 +1,58 @@
+/*основная часть*/
+
+main {
+    width: 90%;
+}
+
+.services {
+    width: 100%;
+}
+
+p,
+main>.services>ul {
+    text-align: justify;
+    line-height: 1.4;
+    text-indent: 1.5em;
+}
+
+.services_nav li {
+    list-style: none;
+    text-align: justify;
+    /*line-height: 1.4;*/
+    font-size: x-large;
+    text-align: center;
+}
+
+li {
+    list-style-type: disc;
+}
+
+h2,
+h3,
+h4,
+figure {
+    text-align: center;
+    color: #2e64bf;
+    font-weight: normal;
+}
+
+button {
+    padding: 5px;
+    font-size: 18px;
+    /*border-radius: 10%;*/
+    background-color: #00BFFF;
+    color: black;
+    width: 150px;
+    height: 40px;
+}
+
+button:hover {
+    color: black;
+    background-color: #00FFFF;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+figure>img {
+    width: 50%;
+}

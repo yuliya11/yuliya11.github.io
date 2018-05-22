@@ -1,0 +1,104 @@
+/*основная часть главная страница*/
+
+main {
+    width: 90%;
+    height: auto;
+}
+
+.services {
+    width: 100%;
+}
+
+.family {
+    text-align: center;
+}
+
+.services>.family>img {
+    width: 50%;
+    height: auto;
+}
+
+.services>p,
+.ul>ul>li {
+    text-align: justify;
+    line-height: 1.4;
+    text-indent: 1.5em;
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+}
+
+.video>iframe {
+    width: 50%;
+}
+
+.services>.container {
+    width: 90%;
+    text-align: center;
+}
+
+.container>div {
+    margin: 0 1% 0 1%;
+}
+
+.treatment,
+.orthodontics,
+.prosthetics,
+.surgery {
+    width: 20%;
+    text-align: center;
+    border: 1px solid lightgrey;
+    font-size: 3vmin;
+    color: #2e64bf;
+    height: 380px;
+    border-radius: 5%;
+    /*margin: 0 1% 0 1%;*/
+}
+
+.treatment>img,
+.orthodontics>img,
+.prosthetics>img,
+.surgery>img {
+    text-align: center;
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+}
+
+.treatment>button,
+.orthodontics>button,
+.prosthetics>button,
+.surgery>button {
+    font-size: 14px;
+    border-radius: 5%;
+    background-color: #00BFFF;
+    color: black;
+    width: 80%;
+    height: 40px;
+}
+
+.treatment,
+.orthodontics,
+.prosthetics,
+.surgery {
+    display: inline-block;
+}
+
+h2,
+h3 {
+    font-weight: normal;
+    text-align: center;
+    color: #2e64bf;
+}
+
+.treatment>button:hover,
+.orthodontics>button:hover,
+.prosthetics>button:hover,
+.surgery>button:hover {
+    color: black;
+    background-color: #00FFFF;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
