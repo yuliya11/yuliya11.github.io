@@ -1,15 +1,12 @@
 /*основная часть*/
 
-main {
-    width: 93%;
-}
-
-.container1 {
-    width: 93%;
+main,
+.container1,
+.container1>.command {
+    width: 100%;
 }
 
 .container1>.command {
-    width: 93%;
     text-align: center;
 }
 
@@ -44,3 +41,11 @@ h5 {
     color: grey;
 }
 
+@media (min-width:0px) and (max-width:640px),
+(min-width:641px) and (max-width:1024px){
+    .command-one {
+    width: 80%;
+    height: auto;
+    margin: 10px 0 10px 0;
+}
+}

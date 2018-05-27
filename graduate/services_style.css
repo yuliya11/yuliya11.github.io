@@ -8,7 +8,7 @@ main {
     width: 100%;
 }
 
-p,
+main p,
 main>.services>ul {
     text-align: justify;
     line-height: 1.4;
@@ -18,12 +18,13 @@ main>.services>ul {
 .services_nav li {
     list-style: none;
     text-align: justify;
-    /*line-height: 1.4;*/
     font-size: x-large;
     text-align: center;
+    padding-top: 5px;
+
 }
 
-li {
+main>li {
     list-style-type: disc;
 }
 
@@ -36,23 +37,66 @@ figure {
     font-weight: normal;
 }
 
+.menu{
+    width: 100%;
+    text-align: center;
+}
+
+.menu>li {
+    display: inline-block;
+    width: 40%;
+ }
+
 button {
-    padding: 5px;
-    font-size: 18px;
-    /*border-radius: 10%;*/
+    font-size: 3vmin;
+    margin-bottom: 10px;
     background-color: #00BFFF;
     color: black;
-    width: 150px;
+    width: 40%;
     height: 40px;
 }
 
+.priceButton{
+    width: 20%;
+}
 button:hover {
     color: black;
     background-color: #00FFFF;
     cursor: pointer;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 figure>img {
-    width: 50%;
+    width: 40%;
+}
+
+@media(max-width:640px),
+(min-width:641px) and (max-width:1024px) {
+    .services>figure>img {
+        width: 100%;
+    }
+    
+    .menu button {
+        width: 65%;
+        font-size: 0.6em;
+    }
+    
+    button {
+        font-size: 0.8em;
+        width: 40%;
+    }
+
+    button:hover {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+}
+
+@media (min-width:0px) and (max-width:640px){
+    .menu>li {
+        width: 70%;
+    }
 }

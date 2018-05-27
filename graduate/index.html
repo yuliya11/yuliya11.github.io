@@ -4,32 +4,58 @@
 <head>
     <title>Стоматология ЗУБастик</title>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="header_footer.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="fonts.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/logotip.png" alt="картинка логотипа" title="логотип"></a>
-            <a href="index.html" alt="название стоматологии">
-                <div class="logo-slogan">
-                    <h1>ЗУБ<span>АСТИК</span></h1>
-                    <h5>СТОМАТОЛОГИЯ ДЛЯ ВСЕЙ СЕМЬИ</h5>
-                </div>
-            </a>
+        <div class="containerHeader">
+            <div class="logo">
+                <a href="index.html"><img src="img/logotip.png" alt="картинка логотипа" title="логотип"></a>
+                <a href="index.html" alt="название стоматологии">
+                    <div class="logo-slogan">
+                        <h1>ЗУБ<span>АСТИК</span></h1>
+                        <h5>СТОМАТОЛОГИЯ ДЛЯ ВСЕЙ СЕМЬИ</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="phone">
+                <ul>
+                    <li>
+                        <tel class="phone-type">+375 (29) 290&ndash;85&ndash;85</tel> <span>(velcom)</span></li>
+                    <li>
+                        <tel class="phone-type">+375 (44) 290&ndash;85&ndash;85</tel> <span>(мтс)</span></li>
+                    <li>
+                        <tel class="phone-type">+375 (17) 290&ndash;85&ndash;85</tel> <span>(городской)</span></li>
+                </ul>
+                <br>
+            </div>
+            <!--<div id="backCall">-->
+            <!--    <button>-->
+            <!--            <div class="icon icon-phone"></div>-->
+            <!--            <a href="" title="заказать звонок" alt="кнопка обратного звонка"><span>Заказать звонок</span></a>-->
+            <!--    </button>-->
+            <!--</div>-->
         </div>
-        <div class="phone">
-            <ul>
-                <li><span class="phone-type">+375 (29) 290&ndash;85&ndash;85</span> <span>(velcom)</span></li>
-                <li><span class="phone-type">+375 (44) 290&ndash;85&ndash;85</span> <span>(мтс)</span></li>
-                <li><span class="phone-type">+375 (17) 290&ndash;85&ndash;85</span> <span>(городской)</span></li>
-                <li><span class="phone-type">info@zubastic.by</span></li>
-            </ul>
+    </header>
+    <div>
+        <div class="logo-slogan2">
+            <h1>ЗУБ<span>АСТИК</span></h1>
+            <h5>СТОМАТОЛОГИЯ ДЛЯ ВСЕЙ СЕМЬИ</h5>
         </div>
         <nav>
-            <ul id="myTopnav">
+            <ul id="myTopnav" class="clearfix">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger" class="hamburger"></label>
                 <li><a class="transition" href="index.html" alt="главная страница">Главная</a></li>
                 <li><a href="services.html" alt="услуги">Услуги</a></li>
                 <li><a href="prices.html" alt="стоимость услуг">Цены</a></li>
@@ -37,18 +63,23 @@
                 <li><a href="contacts.html" alt="контакты">Контакты</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <main>
         <div class="services">
             <br>
+            <div class="slaider">
+                <div><img src="img/stomatolog_1.jpg" title="детский стоматолог" alt="детский стоматолог"></div>
+                <div><img src="img/kabinet.jpg" title="кабинет стоматолога" alt="кабинет стоматолога"></div>
+                <div><img src="img/rkt.jpg" title="кабинет стоматолога" alt="кабинет стоматолога"></div>
+            </div>
             <h2 id="#">Стоматология для всей семьи: приятно, весело, не страшно!</h2>
-            <br>
+            <!--<br>-->
             <button><a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="img/button.png" alt="фото кнопки"></a></button>
             <p>Современное увлечение корректировать свою улыбку, отбеливать и выравнивать зубы при помощи стоматологических новинок &mdash; тот редкий случай, когда мода не только красива, но и полезна для здоровья. Не посетить стоматолога сегодня &mdash;
                 признак дурного тона, в то время как семейный поход к хорошему специалисту показывает высокое качество жизни пациента.</p>
             </br>
             <figure class="family">
-                <img src="img/family.jpg" alt="фото семьи">
+                <img src="img/family.jpg" title="семья" alt="фото семьи">
             </figure>
             </br>
             <p>Благодарим вас за то, что вы выбрали клинику ЗУБастик. Мы готовы исполнить все ваши потребности в области стоматологических услуг и предложить полный уход за всей вашей семьей. Все наши врачи являются лицензированными специалистами и имеют
@@ -83,25 +114,25 @@
             <br>
             <div class="container">
                 <div class="treatment">
-                    <img src="img/services_one.jpg" alt="картинка лечение зуба">
+                    <img src="img/services_one.jpg" title="лечение" alt="картинка лечение зуба">
                     <div><span>Лечение</span></div>
                     <br>
                     <button><a href="services.html#treatment" title="Узнать больше" alt="кнопка">УЗНАТЬ БОЛЬШЕ</a></button>
                 </div>
                 <div class="orthodontics">
-                    <img src="img/services_two.jpg" alt="картинка брекетов">
+                    <img src="img/services_two.jpg" title="ортодонтия" alt="картинка брекетов">
                     <div><span>Ортодонтия</span></div>
                     <br>
                     <button><a href="services.html#orthodontics" title="Узнать больше" alt="кнопка">УЗНАТЬ БОЛЬШЕ</a></button>
                 </div>
                 <div class="prosthetics">
-                    <img src="img/services_three.jpg" alt="картинка протеза зуба">
+                    <img src="img/services_three.jpg" title="протезирование" alt="картинка протеза зуба">
                     <div><span>Протезирование</span></div>
                     <br>
                     <button><a href="services.html#prosthetics" title="Узнать больше" alt="кнопка">УЗНАТЬ БОЛЬШЕ</a></button>
                 </div>
                 <div class="surgery">
-                    <img src="img/services_four.jpg" alt="картинка удаление зуба">
+                    <img src="img/services_four.jpg" title="хирургия" alt="картинка удаление зуба">
                     <div><span>Хирургия</span></div>
                     <br>
                     <button><a href="services.html#surgery" title="Узнать больше" alt="кнопка">УЗНАТЬ БОЛЬШЕ</a></button>
@@ -111,23 +142,28 @@
         <br>
     </main>
     <footer>
-        <div #="container-footer">
-            <h6 class="title">ООО ЗУБ<span>АСТИК</span></h6>
-            <p>Стоматологический центр</p>
+        <div class="containerFooter">
+            <br>
+            <div class="zub">
+                <h6 class="title">ООО ЗУБ<span>АСТИК</span></h6>
+                <p>Стоматологический центр</p>
+            </div>
+            <div class="address">
+                <h6>АДРЕС</h6>
+                <p>г. Минск ул. Ф.Скорины дом 39</p>
+            </div>
+            <div class="time">
+                <h6>ЧАСЫ РАБОТЫ</h6>
+                <p>Понедельник&ndash;Пятница &mdash; с 8.30 до 19.00</p>
+                <p>Суббота &mdash; с 10.00 до 13.00</p>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>&copy;2018. Стоматологический центр ООО &laquo;ЗУБастик&raquo;</p>
+            </div>
+            <br>
         </div>
-        <div>
-            <h6>АДРЕС</h6>
-            <p>г. Минск ул. Ф.Скорины дом 39</p>
-        </div>
-        <div>
-            <h6>ЧАСЫ РАБОТЫ</h6>
-            <p>Понедельник&ndash;Пятница &mdash; с 8.30 до 19.00</p>
-            <p>Суббота &mdash; с 10.00 до 13.00</p>
-        </div>
-        <hr>
-        <div>&copy;2018. Стоматологический центр ООО &laquo;ЗУБастик&raquo;</div>
     </footer>
-
 </body>
 
 </html>

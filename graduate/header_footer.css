@@ -8,17 +8,28 @@ body {
     width: auto;
 }
 
+button>a {
+    display: block;
+}
+
 /*header*/
 
 header {
     width: 90%;
     height: auto;
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#E0FFFF), color-stop(#AFEEEE), color-stop(#7FFFD4), color-stop(#00CED1), color-stop(#E0FFFF), to(#FFFFFF));
+    background: -webkit-linear-gradient(left, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
+    background: -o-linear-gradient(left, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
     background: linear-gradient(to right, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
 }
 
+.containerHeader {
+    width: 100%;
+}
+
 .logo {
-    width: 50%;
-    height: 25vmin;
+    width: 60%;
+    /*height: 25vmin;*/
     display: inline-block;
 }
 
@@ -37,21 +48,33 @@ header {
 }
 
 .logo-slogan>h5,
-.logo-slogan>h1 {
+.logo-slogan>h1,
+.logo-slogan>h1>span {
     color: #2e64bf;
     font-weight: bold;
 }
 
+.logo-slogan2 {
+    display: none;
+}
+
+.logo-slogan>h1 {
+    font-size: 6vmin;
+}
+
+.logo-slogan>h5 {
+    font-size: 2vmin;
+}
+
 .logo-slogan>h1>span {
     font-size: 3vmin;
-    font-weight: bold;
 }
 
 .phone {
     text-align: right;
     display: inline-block;
     color: #2e64bf;
-    width: 45%;
+    width: 38%;
     height: auto;
 }
 
@@ -62,52 +85,131 @@ header {
 .phone>ul>li {
     list-style: none;
     line-height: 2;
+    font-size: 2.5vmin;
 }
 
 .phone-type {
     font-weight: bold;
 }
 
+/*.icon {*/
+
+/*    font-size: 4vmin;*/
+
+/*    padding: 5px;*/
+
+/*    color: white;*/
+
+/*    float: left;*/
+
+/*}*/
+
+/*#backCall {*/
+
+/*    text-align: right;*/
+
+/*}*/
+
+/*#backCall>button>a>span {*/
+
+/*    color: white;*/
+
+/*    vertical-align: middle;*/
+
+/*    font-size: 3vmin;*/
+
+/*}*/
+
+/*#backCall>button {*/
+
+/*    margin: 2vmin 0 2vmin 0;*/
+
+/*    padding-top: 2vmin;*/
+
+/*    text-transform: uppercase;*/
+
+/*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);*/
+
+/*transition-duration: .8s;*/
+
+/*    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);*/
+
+/*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);*/
+
+/*    -webkit-transition-duration: .8s;*/
+
+/*    -o-transition-duration: .8s;*/
+
+/*    transition-duration: .8s;*/
+
+/*    background: #DC143C;*/
+
+/*    width: 20%;*/
+
+/*    height: auto;*/
+
+/*}*/
+
+/*#backCall>button:hover {*/
+
+/*    background-color: blue;*/
+
+/*    cursor: pointer;*/
+
+/*    -webkit-transform: scale(1.1);*/
+
+/*    -ms-transform: scale(1.1);*/
+
+/*    transform: scale(1.1);*/
+
+/*    color: red;*/
+
+/*}*/
+
+/*----------------*/
+
 nav {
-    width: 100%;
-    height: 10vmin;
+    width: 90%;
+    height: auto;
     margin: auto;
 }
 
 nav ul {
-    display: table;
+    background: #0000FF;
     width: 100%;
-    height: 100%;
+    line-height: auto;
     margin: auto;
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #myTopnav li {
-    display: table-cell;
-    background: #0000FF;
-    /*vertical-align: middle;*/
-    height: 100%;
-    font-size: 16px;
-    padding-top: 3vmin;
+    float: left;
+    width: 20%;
+    line-height: 60px;
+    font-size: 3vmin;
 }
 
 #myTopnav a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 4px 12px;
-    height: 100%;
     text-align: center;
-    /*vertical-align: middle;*/
 }
 
 #myTopnav li:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#E0FFFF), color-stop(#AFEEEE), color-stop(#7FFFD4), to(#00CED1));
+    background: -webkit-linear-gradient(left, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1);
+    background: -o-linear-gradient(left, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1);
     background: linear-gradient(to right, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1);
-    border: 1px solid blue;
-    transform: scale(1.2);
 }
 
-#myTopnav a:hover,
-nav:hover {
+#myTopnav a:hover {
     color: blue;
 }
 
@@ -115,7 +217,12 @@ a {
     text-decoration: none;
 }
 
+input#hamburger {
+    display: none;
+}
+
 /*кнопка вверх*/
+
 .topbutton {
     width: 40px;
     height: 40px;
@@ -132,50 +239,199 @@ a {
 
 .topbutton:hover {
     cursor: pointer;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
     transform: scale(1.4);
 }
-/*------------------------*/
 
 /*footer*/
 
 footer {
     width: 90%;
+    height: auto;
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#E0FFFF), color-stop(#AFEEEE), color-stop(#7FFFD4), color-stop(#00CED1), color-stop(#E0FFFF), to(#FFFFFF));
+    background: -webkit-linear-gradient(left, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
+    background: -o-linear-gradient(left, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
     background: linear-gradient(to right, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
-    height: 180px;
+    text-align: center;
     font-size: 12px;
 }
 
-footer>div:nth-of-type(1),
-footer>div:nth-of-type(2),
-footer>div:nth-of-type(3) {
+.containerFooter {
+    width: 100%;
+}
+
+.zub,
+.time,
+.address {
+    width: 33%;
+    height: auto;
+    line-height: 1.5;
     display: inline-block;
-    width: 30%;
-    height: 100px;
-    text-align: center;
     vertical-align: top;
-    padding: 40px 0 0 22px;
-    line-height: 1.5;
-
 }
 
-footer>div:nth-of-type(4) {
-    text-align: center;
-    padding-top: 10px;
-    line-height: 1.5;
-}
-
-footer>div>p {
-    text-align: center;
+.containerFooter p {
     font-size: 12px;
 }
 
-footer>div>h6 {
+.containerFooter h6 {
     color: #2e64bf;
     font-weight: normal;
     font-size: 1rem;
 }
 
-footer>div>h6>span,
-footer>div>span {
-    font-size: 1.5vmin;
+.containerFooter>div>h6>span,
+.containerFooter>div>span {
+    font-size: 1.8vmin;
+}
+
+.copyright {
+    width: 100%;
+    padding-top: 10px;
+    line-height: 0;
+}
+
+/*------------------*/
+
+@media (max-width:640px) {
+    header,
+    .topbutton,
+    .phone,
+    nav li {
+        display: none;
+    }
+
+    .logo-slogan2 {
+        display: block;
+        color: #2e64bf;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#E0FFFF), color-stop(#AFEEEE), color-stop(#7FFFD4), color-stop(#00CED1), color-stop(#E0FFFF), to(#FFFFFF));
+        background: -webkit-linear-gradient(left, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
+        background: -o-linear-gradient(left, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
+        background: linear-gradient(to right, #FFFFFF, #E0FFFF, #AFEEEE, #7FFFD4, #00CED1, #E0FFFF, #FFFFFF);
+    }
+
+    .logo-slogan2>h1 {
+        font-size: 6vmin;
+    }
+
+    .logo-slogan2>h5 {
+        font-size: 2vmin;
+    }
+
+    .logo-slogan2>h1>span {
+        font-size: 3vmin;
+        font-weight: bold;
+    }
+
+    #myTopnav li {
+        width: 60%;
+        line-height: 25px;
+    }
+
+    .hamburger {
+        width: 16px;
+        height: 12px;
+        float: right;
+        margin: 6px;
+        position: relative;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .hamburger:after {
+        content: "";
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        top: 5px;
+        height: 2px;
+        background: #fff;
+    }
+
+    #hamburger:checked~li {
+        display: block;
+    }
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    #myTopnav li {
+        float: none;
+        display: none;
+        text-align: left;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    .zub,
+    .time,
+    .address {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .containerFooter>div>h6>span,
+    .containerFooter>div>span {
+        font-size: 2vmin;
+    }
+}
+
+@media (min-width:641px) and (max-width:1024px) {
+    header,
+    footer {
+        width: 90%;
+    }
+
+    .containerHeader,
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo>a>img {
+        /*width: 20%;*/
+        line-height: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo-slogan {
+        width: 45%;
+        text-align: left;
+        line-height: auto;
+
+    }
+
+    .phone,
+    .topbutton {
+        display: none;
+    }
+
+    /*#backCall,*/
+    /*footer {*/
+    /*    text-align: center;*/
+    /*}*/
+    /*#backCall>button {*/
+    /*    width: 50%;*/
+    /*    height: auto;*/
+    /*}*/
+    .zub,
+    .time,
+    .address {
+        width: 45%;
+        height: auto;
+        padding: 5px 0 5px 0;
+    }
+
+
 }
