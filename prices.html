@@ -5,16 +5,22 @@
     <title>Цены/Стоматология ЗУБастик</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header_footer.css" type="text/css" />
-    <link rel="stylesheet" href="prices_style.css" type="text/css" />
-    <link rel="stylesheet" href="fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/header_footer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/prices_style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="containerHeader">
             <div class="logo">
-                <a href="index.html"><img src="img/logotip.png" alt="картинка логотипа" title="логотип"></a>
+                <a href="index.html"><img src="assets/img/logotip.png" alt="картинка логотипа" title="логотип"></a>
                 <a href="index.html" alt="название стоматологии">
                     <div class="logo-slogan">
                         <h1>ЗУБ<span>АСТИК</span></h1>
@@ -25,20 +31,14 @@
             <div class="phone">
                 <ul>
                     <li>
-                        <tel class="phone-type">+375 (29) 290&ndash;85&ndash;85</tel> <span>(velcom)</span></li>
+                        <a class="phone-type" href="tel:+37529">+375 (29) 290&ndash;85&ndash;85</a> <span>(velcom)</span></li>
                     <li>
-                        <tel class="phone-type">+375 (44) 290&ndash;85&ndash;85</tel> <span>(мтс)</span></li>
+                        <a class="phone-type" href="tel:+37544">+375 (44) 290&ndash;85&ndash;85</a> <span>(мтс)</span></li>
                     <li>
-                        <tel class="phone-type">+375 (17) 290&ndash;85&ndash;85</tel> <span>(городской)</span></li>
-                    <br>
+                        <a class="phone-type" href="tel:+37517">+375 (17) 290&ndash;85&ndash;85</a> <span>(городской)</span></li>
                 </ul>
+                <br>
             </div>
-            <!--<div id="backCall">-->
-            <!--    <button>-->
-            <!--            <div class="icon icon-phone"></div>-->
-            <!--            <a href="" title="заказать звонок" alt="кнопка обратного звонка"><span>Заказать звонок</span></a>-->
-            <!--    </button>-->
-            <!--</div>-->
         </div>
     </header>
     <div>
@@ -59,97 +59,97 @@
         </nav>
     </div>
     <main>
-        <div id="#">
+        <div>
+            <div id="#">
+                <h2 class="title-prices">Наши цены</h2>
+                <a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="assets/img/button.png" alt="фото кнопки"></a>
+            </div>
+            <table class="table-block">
+                <tr>
+                    <th>Вид операции</th>
+                    <th>Ориентировочная стоимость, руб</th>
+                </tr>
+                <tr>
+                    <td>Консультация врача&ndash;стоматолога</td>
+                    <td class="align">10&ndash;12</td>
+                </tr>
+                <tr>
+                    <td>Лечение кариеса зубов</td>
+                    <td class="align">50&ndash;70</td>
+                </tr>
+                <tr>
+                    <td>Пломбирование зубов</td>
+                    <td class="align">50&ndash;70</td>
+                </tr>
+                <tr>
+                    <td>Лечение зубов под седацией</td>
+                    <td class="align">Цены индивидуальные</td>
+                </tr>
+                <tr>
+                    <td>Эндодонтическое лечение каналов зубов</td>
+                    <td class="align">55&ndash;100</td>
+                </tr>
+                <tr>
+                    <td>Распломбировка корневого канала </td>
+                    <td class="align">35&ndash;45</td>
+                </tr>
+                <tr>
+                    <td>Лечение пульпита</td>
+                    <td class="align">40&ndash;70</td>
+                </tr>
+                <tr>
+                    <td>Удаление нерва зуба</td>
+                    <td class="align">40&ndash;70</td>
+                </tr>
+                <tr>
+                    <td>Удаление зуба мудрости</td>
+                    <td class="align">100</td>
+                </tr>
+                <tr>
+                    <td>Резекция верхушки корня зуба</td>
+                    <td class="align">100&ndash;170</td>
+                </tr>
+                <tr>
+                    <td>Ортодонтическое лечение мультибондинговыми системами (брекет&ndash;система)</td>
+                    <td class="align">190</td>
+                </tr>
+                <tr>
+                    <td>Установка брекетов</td>
+                    <td class="align">850</td>
+                </tr>
+                <tr>
+                    <td>Выравнивание зубов</td>
+                    <td class="align">850</td>
+                </tr>
+                <tr>
+                    <td>Протезирование зубов: съемный протез</td>
+                    <td class="align">270</td>
+                </tr>
+                <tr>
+                    <td>Протезирование зубов: бюгельный протез</td>
+                    <td class="align">280</td>
+                </tr>
+                <tr>
+                    <td>Протезирование зубов: за 1 единицу металлокерамики</td>
+                    <td class="align">220</td>
+                </tr>
+                <tr>
+                    <td>Операция установки 1 дентального имплантата</td>
+                    <td class="align">680</td>
+                </tr>
+                <tr>
+                    <td>Протезирование зубов: за 1 единицу на дентальных имплантатах</td>
+                    <td class="align">500&ndash;550</td>
+                </tr>
+                <tr>
+                    <td>Протезирование зубов: съемный протез</td>
+                    <td class="align">270</td>
+                </tr>
+            </table>
             <br>
-            <h2 class="title-prices">Наши цены</h2>
-            <a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="img/button.png" alt="фото кнопки"></a>
+            <p>Цены указаны ориентировочно и не являются обязательством при оказании услуг. Полная стоимость работ определяется по результатам обследования и согласовывается с пациентом на момент оказания услуг. Расчет производится в белорусских рублях.</p>
             <br>
         </div>
-        <table class="table-block">
-            <tr>
-                <th>Вид операции</th>
-                <th>Ориентировочная стоимость, руб</th>
-            </tr>
-            <tr>
-                <td>Консультация врача&ndash;стоматолога</td>
-                <td class="align">10&ndash;12</td>
-            </tr>
-            <tr>
-                <td>Лечение кариеса зубов</td>
-                <td class="align">50&ndash;70</td>
-            </tr>
-            <tr>
-                <td>Пломбирование зубов</td>
-                <td class="align">50&ndash;70</td>
-            </tr>
-            <tr>
-                <td>Лечение зубов под седацией</td>
-                <td class="align">Цены индивидуальные</td>
-            </tr>
-            <tr>
-                <td>Эндодонтическое лечение каналов зубов</td>
-                <td class="align">55&ndash;100</td>
-            </tr>
-            <tr>
-                <td>Распломбировка корневого канала </td>
-                <td class="align">35&ndash;45</td>
-            </tr>
-            <tr>
-                <td>Лечение пульпита</td>
-                <td class="align">40&ndash;70</td>
-            </tr>
-            <tr>
-                <td>Удаление нерва зуба</td>
-                <td class="align">40&ndash;70</td>
-            </tr>
-            <tr>
-                <td>Удаление зуба мудрости</td>
-                <td class="align">100</td>
-            </tr>
-            <tr>
-                <td>Резекция верхушки корня зуба</td>
-                <td class="align">100&ndash;170</td>
-            </tr>
-            <tr>
-                <td>Ортодонтическое лечение мультибондинговыми системами (брекет&ndash;система)</td>
-                <td class="align">190</td>
-            </tr>
-            <tr>
-                <td>Установка брекетов</td>
-                <td class="align">850</td>
-            </tr>
-            <tr>
-                <td>Выравнивание зубов</td>
-                <td class="align">850</td>
-            </tr>
-            <tr>
-                <td>Протезирование зубов: съемный протез</td>
-                <td class="align">270</td>
-            </tr>
-            <tr>
-                <td>Протезирование зубов: бюгельный протез</td>
-                <td class="align">280</td>
-            </tr>
-            <tr>
-                <td>Протезирование зубов: за 1 единицу металлокерамики</td>
-                <td class="align">220</td>
-            </tr>
-            <tr>
-                <td>Операция установки 1 дентального имплантата</td>
-                <td class="align">680</td>
-            </tr>
-            <tr>
-                <td>Протезирование зубов: за 1 единицу на дентальных имплантатах</td>
-                <td class="align">500&ndash;550</td>
-            </tr>
-            <tr>
-                <td>Протезирование зубов: съемный протез</td>
-                <td class="align">270</td>
-            </tr>
-        </table>
-        <br>
-        <p>Цены указаны ориентировочно и не являются обязательством при оказании услуг. Полная стоимость работ определяется по результатам обследования и согласовывается с пациентом на момент оказания услуг. Расчет производится в белорусских рублях.</p>
-        <br>
     </main>
     <footer>
         <div class="containerFooter">

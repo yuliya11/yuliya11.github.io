@@ -2,19 +2,25 @@
 <html>
 
 <head>
-    <title>Стоматология ЗУБастик</title>
+    <title>Услуги/Стоматология ЗУБастик</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header_footer.css" type="text/css" />
-    <link rel="stylesheet" href="services_style.css" type="text/css" />
-    <link rel="stylesheet" href="fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/header_footer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/services_style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="containerHeader">
             <div class="logo">
-                <a href="index.html"><img src="img/logotip.png" alt="картинка логотипа" title="логотип"></a>
+                <a href="index.html"><img src="assets/img/logotip.png" alt="картинка логотипа" title="логотип"></a>
                 <a href="index.html" alt="название стоматологии">
                     <div class="logo-slogan">
                         <h1>ЗУБ<span>АСТИК</span></h1>
@@ -25,20 +31,14 @@
             <div class="phone">
                 <ul>
                     <li>
-                        <tel class="phone-type">+375 (29) 290&ndash;85&ndash;85</tel> <span>(velcom)</span></li>
+                        <a class="phone-type" href="tel:+37529">+375 (29) 290&ndash;85&ndash;85</a> <span>(velcom)</span></li>
                     <li>
-                        <tel class="phone-type">+375 (44) 290&ndash;85&ndash;85</tel> <span>(мтс)</span></li>
+                        <a class="phone-type" href="tel:+37544">+375 (44) 290&ndash;85&ndash;85</a> <span>(мтс)</span></li>
                     <li>
-                        <tel class="phone-type">+375 (17) 290&ndash;85&ndash;85</tel> <span>(городской)</span></li>
-                    <br>
+                        <a class="phone-type" href="tel:+37517">+375 (17) 290&ndash;85&ndash;85</a> <span>(городской)</span></li>
                 </ul>
+                <br>
             </div>
-            <!--<div id="backCall">-->
-            <!--    <button>-->
-            <!--            <div class="icon icon-phone"></div>-->
-            <!--            <a href="" title="заказать звонок" alt="кнопка обратного звонка"><span>Заказать звонок</span></a>-->
-            <!--    </button>-->
-            <!--</div>-->
         </div>
     </header>
     <div>
@@ -64,7 +64,7 @@
             <div class="services_nav">
                 <h2 id="#">Список услуг клиники</h2>
                 <br>
-                <a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="img/button.png" alt="фото кнопки"></a>
+                <a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="assets/img/button.png" alt="фото кнопки"></a>
                 <ul class="menu">
                     <li><button><a href="#treatment">Лечение зубов</a></button></li>
                     <li><button><a href="#orthodontics">Ортодонтия</a></button></li>
@@ -77,7 +77,7 @@
             <h2 id="treatment">ЛЕЧЕНИЕ ЗУБОВ</h2>
             </br>
             <figure>
-                <img src="img/one.jpg" title="лечение зубов" alt="картинка лечение зуба">
+                <img src="assets/img/one.jpg" title="лечение зубов" alt="картинка лечение зуба">
             </figure>
             </br>
             <p>
@@ -112,7 +112,7 @@
             <h2 id="orthodontics">ОРТОДОНТИЯ</h2>
             </br>
             <figure>
-                <img src="img/four.jpg" title="ортодонтия" alt="картинка брекетов">
+                <img src="assets/img/four.jpg" title="ортодонтия" alt="картинка брекетов">
             </figure>
             </br>
             <h2>Исправление прикуса</h2>
@@ -134,7 +134,7 @@
             <h2 id="prosthetics">ПРОТЕЗИРОВАНИЕ</h2>
             </br>
             <figure>
-                <img src="img/two.jpg" title="протезирование" alt="картинка протеза зуба">
+                <img src="assets/img/two.jpg" title="протезирование" alt="картинка протеза зуба">
             </figure>
             </br>
             <p>Выпадение одного или нескольких зубов приносит эстетические и физические неудобства. Продолжительное отсутствие зубов приводит к ухудшению прикуса, смещению остальных зубов и развитию болезней полости рта. Своевременное протезирование позволяет
@@ -185,7 +185,7 @@
             <h2 id="surgery">УДАЛЕНИЕ ЗУБОВ</h2>
             </br>
             <figure>
-                <img src="img/three.jpg" title="удаление зуба" alt="картинка удаление зуба">
+                <img src="assets/img/three.jpg" title="удаление зуба" alt="картинка удаление зуба">
             </figure>
             </br>
             <p>Хирург&ndash;стоматолог удаляет пораженные заболеванием зубы, если их невозможно вылечить с помощью пломб или иных стоматологических процедур. Процедура удаления проводится под действием успокаивающих лекарственных средств, и с применением

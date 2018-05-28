@@ -1,4 +1,8 @@
-/*основная часть*/
+main,
+main>div>div {
+    width: 90%;
+    height: auto;
+}
 
 .title-prices {
     font-weight: normal;
@@ -46,11 +50,12 @@ main p {
 
 @media (min-width:0px) and (max-width:640px),
 (min-width:641px) and (max-width:1024px) {
-    table {
-        width: 95%;
+    .table-block {
+        width: 100%;
+        font-size: 14px;
     }
 
-    p {
-        width: 90%;
+    main p {
+        width: 100%;
     }
 }

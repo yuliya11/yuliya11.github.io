@@ -2,19 +2,25 @@
 <html>
 
 <head>
-    <title>Контакты/Стоматология Зубастик</title>
+    <title>Контакты/Стоматология ЗУБастик</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="header_footer.css" type="text/css" />
-    <link rel="stylesheet" href="contacts_style.css" type="text/css" />
-    <link rel="stylesheet" href="fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/header_footer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/contacts_style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="containerHeader">
             <div class="logo">
-                <a href="index.html"><img src="img/logotip.png" alt="картинка логотипа" title="логотип"></a>
+                <a href="index.html"><img src="assets/img/logotip.png" alt="картинка логотипа" title="логотип"></a>
                 <a href="index.html" alt="название стоматологии">
                     <div class="logo-slogan">
                         <h1>ЗУБ<span>АСТИК</span></h1>
@@ -24,18 +30,15 @@
             </div>
             <div class="phone">
                 <ul>
-                    <li><tel class="phone-type">+375 (29) 290&ndash;85&ndash;85</tel> <span>(velcom)</span></li>
-                    <li><tel class="phone-type">+375 (44) 290&ndash;85&ndash;85</tel> <span>(мтс)</span></li>
-                    <li><tel class="phone-type">+375 (17) 290&ndash;85&ndash;85</tel> <span>(городской)</span></li>
-                    <br>
+                    <li>
+                        <a class="phone-type" href="tel:+37529">+375 (29) 290&ndash;85&ndash;85</a> <span>(velcom)</span></li>
+                    <li>
+                        <a class="phone-type" href="tel:+37544">+375 (44) 290&ndash;85&ndash;85</a> <span>(мтс)</span></li>
+                    <li>
+                        <a class="phone-type" href="tel:+37517">+375 (17) 290&ndash;85&ndash;85</a> <span>(городской)</span></li>
                 </ul>
+                <br>
             </div>
-            <!--<div id="backCall">-->
-            <!--    <button>-->
-            <!--            <div class="icon icon-phone"></div>-->
-            <!--            <a href="" title="заказать звонок" alt="кнопка обратного звонка"><span>Заказать звонок</span></a>-->
-            <!--    </button>-->
-            <!--</div>-->
         </div>
     </header>
     <div>
@@ -60,7 +63,7 @@
             <br>
             <h2 id="#">Как нас найти</h2>
             <br>
-            <a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="img/button.png" alt="фото кнопки"></a>
+            <a href="#" title="Вернуться к началу" alt="картинка кнопки вверх" class="topbutton"><img src="assets/img/button.png" alt="фото кнопки"></a>
             <h3>Мы с радостью ответим на все Ваши вопросы</h3>
             <br>
             <br>
@@ -74,9 +77,9 @@
                 <div>
                     <div class="icon icon-phone"></div>
                     <h4>Телефон</h4>
-                    <p>+375 (29) 290&ndash;85&ndash;85 (velcom)</p>
-                    <p>+375 (44) 290&ndash;85&ndash;85 (мтс)</p>
-                    <p>+375 (17) 290&ndash;85&ndash;85 (городской)</p>
+                    <a href="tel:+37529">+375 (29) 290&ndash;85&ndash;85</a>
+                    <a href="tel:+37544">+375 (44) 290&ndash;85&ndash;85</a>
+                    <a href="tel:+37517">+375 (17) 290&ndash;85&ndash;85</a>
                     <br>
                 </div>
                 <div>
@@ -90,7 +93,7 @@
                     <div class="icon icon-envelope-o"></div>
                     <h4>Email</h4>
                     <p>info@zubastic.by</p>
-                    
+
                 </div>
                 <div id="map">
                     <br>

@@ -7,6 +7,7 @@ html {
 main {
     width: 90%;
     height: auto;
+    text-align: justify;
 }
 
 .services {
@@ -103,7 +104,6 @@ h3 {
     color: black;
     background-color: #00FFFF;
     cursor: pointer;
-    /*transform: scale(1.2);*/
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);

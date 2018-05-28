@@ -29,7 +29,6 @@ header {
 
 .logo {
     width: 60%;
-    /*height: 25vmin;*/
     display: inline-block;
 }
 
@@ -92,81 +91,7 @@ header {
     font-weight: bold;
 }
 
-/*.icon {*/
-
-/*    font-size: 4vmin;*/
-
-/*    padding: 5px;*/
-
-/*    color: white;*/
-
-/*    float: left;*/
-
-/*}*/
-
-/*#backCall {*/
-
-/*    text-align: right;*/
-
-/*}*/
-
-/*#backCall>button>a>span {*/
-
-/*    color: white;*/
-
-/*    vertical-align: middle;*/
-
-/*    font-size: 3vmin;*/
-
-/*}*/
-
-/*#backCall>button {*/
-
-/*    margin: 2vmin 0 2vmin 0;*/
-
-/*    padding-top: 2vmin;*/
-
-/*    text-transform: uppercase;*/
-
-/*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);*/
-
-/*transition-duration: .8s;*/
-
-/*    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);*/
-
-/*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);*/
-
-/*    -webkit-transition-duration: .8s;*/
-
-/*    -o-transition-duration: .8s;*/
-
-/*    transition-duration: .8s;*/
-
-/*    background: #DC143C;*/
-
-/*    width: 20%;*/
-
-/*    height: auto;*/
-
-/*}*/
-
-/*#backCall>button:hover {*/
-
-/*    background-color: blue;*/
-
-/*    cursor: pointer;*/
-
-/*    -webkit-transform: scale(1.1);*/
-
-/*    -ms-transform: scale(1.1);*/
-
-/*    transform: scale(1.1);*/
-
-/*    color: red;*/
-
-/*}*/
-
-/*----------------*/
+/*nav*/
 
 nav {
     width: 90%;
@@ -177,7 +102,6 @@ nav {
 nav ul {
     background: #0000FF;
     width: 100%;
-    line-height: auto;
     margin: auto;
     list-style-type: none;
 }
@@ -292,7 +216,7 @@ footer {
     line-height: 0;
 }
 
-/*------------------*/
+/*media*/
 
 @media (max-width:640px) {
     header,
@@ -305,7 +229,6 @@ footer {
     .logo-slogan2 {
         display: block;
         color: #2e64bf;
-        font-weight: bold;
         text-align: center;
         padding: 5px 0 5px 0;
         background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(#E0FFFF), color-stop(#AFEEEE), color-stop(#7FFFD4), color-stop(#00CED1), color-stop(#E0FFFF), to(#FFFFFF));
@@ -320,6 +243,8 @@ footer {
 
     .logo-slogan2>h5 {
         font-size: 2vmin;
+        font-weight: bold;
+        color: #2e64bf;
     }
 
     .logo-slogan2>h1>span {
@@ -387,44 +312,20 @@ footer {
 }
 
 @media (min-width:641px) and (max-width:1024px) {
-    header,
     footer {
         width: 90%;
     }
 
-    .containerHeader,
-    .logo {
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo>a>img {
-        /*width: 20%;*/
-        line-height: auto;
-        text-align: center;
-        margin: 0;
-    }
-
     .logo-slogan {
-        width: 45%;
+        width: 58%;
         text-align: left;
         line-height: auto;
-
     }
 
-    .phone,
     .topbutton {
         display: none;
     }
 
-    /*#backCall,*/
-    /*footer {*/
-    /*    text-align: center;*/
-    /*}*/
-    /*#backCall>button {*/
-    /*    width: 50%;*/
-    /*    height: auto;*/
-    /*}*/
     .zub,
     .time,
     .address {
@@ -432,6 +333,4 @@ footer {
         height: auto;
         padding: 5px 0 5px 0;
     }
-
-
 }

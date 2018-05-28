@@ -26,7 +26,10 @@ h3 {
     width: 45%;
     vertical-align: top;
 }
-
+ .container1 a {
+     display: block;
+ }
+ 
 .container1 {
     text-align: center;
     line-height: 1.5;
@@ -50,3 +53,5 @@ iframe {
         display: inline;
     }
 }
+
+/*------------------*/
